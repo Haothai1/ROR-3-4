@@ -1,10 +1,10 @@
-# I wrote current solution and probably understand what I made, 
-# but I can't see potential and where I need to use it.
-# maybe in multithreading programming, but it is my assumptions...
+# I hope it's solution is right, but I am still can't understand 
+# where I can use it... I understand, I am watching world throught paradigm of JS, where 
+# didn't used blocks and I hope it will changed with practice
 
 def do_calc
-    return yield()
+    return yield(7,9)
 end
 
-puts do_calc { |a,b| 7 + 9}
-puts do_calc { |a,b| 7 * 9}
+puts do_calc { |a,b| a + b}
+puts do_calc { |a,b| a * b}
