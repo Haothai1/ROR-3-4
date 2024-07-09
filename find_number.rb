@@ -6,10 +6,11 @@
 
 # It generates a random number from 1 to 100.
 # In a loop, it prompts you for a guess. What you enter will be a string. So you convert it to an integer with the to_i method of the string class.
-loop do
-    secret_number = rand(1..100)
-    # puts secret_number # Uncomment to get the output of the secret number
 
+secret_number = rand(1..100)
+
+loop do
+    # puts secret_number # Uncomment to get the output of the secret number
     puts "Guess a number between 1 and 100"
     guess = gets.chomp.to_i
 

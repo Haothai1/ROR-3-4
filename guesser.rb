@@ -5,7 +5,6 @@ loop do
     # puts secret_number # Uncomment to get the output of the secret number
 
     puts "Think of a number between 1 and 100"
-    guess = gets.chomp.to_i
 
     low = 1
     high = 100
